@@ -1,0 +1,48 @@
+﻿<mah:MetroWindow x:Class="calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:calculator"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        mc:Ignorable="d"
+        Title="Calculator" Height="500" Width="700">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+
+        </Grid.RowDefinitions>
+        <TextBox x:Name="Result" IsReadOnly="True" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" TextAlignment="Right" VerticalAlignment="Bottom" BorderThickness="0" FontSize="30" />
+        <Button x:Name="ButtonSqrt" Grid.Column="0" Grid.Row="1" Content="Sqrt" Click="ButtonSqrt_Click"/>
+        <Button x:Name="ButtonPower" Grid.Column="0" Grid.Row="2" Content="^" Click="ButtonPower_Click" />
+        <Button x:Name="ButtonClean" Grid.Column="1" Grid.Row="4" Content="C" Click="ButtonClean_Click"/>
+        <Button x:Name="ButtonOff" Grid.Column="0" Grid.Row="3" Grid.RowSpan="2" Content="OFF" Click="ButtonOff_Click" />
+        <Button x:Name="Button7" Grid.Column="1" Grid.Row="1" Content="7" Click="Button_Click" />
+        <Button x:Name="Button4" Grid.Column="1" Grid.Row="2" Content="4" Click="Button_Click" />
+        <Button x:Name="Button1" Grid.Column="1" Grid.Row="3" Content="1" Click="Button_Click"/>
+        <Button x:Name="Button0" Grid.Column="2" Grid.Row="4" Content="0" Click="Button_Click"/>
+        <Button x:Name="Button8" Grid.Column="2" Grid.Row="1" Content="8" Click="Button_Click" />
+        <Button x:Name="Button5" Grid.Column="2" Grid.Row="2" Content="5" Click="Button_Click"/>
+        <Button x:Name="Button2" Grid.Column="2" Grid.Row="3" Content="2" Click="Button_Click"/>
+        <Button x:Name="Button9" Grid.Column="3" Grid.Row="1" Content="9" Click="Button_Click" />
+        <Button x:Name="Button6" Grid.Column="3" Grid.Row="2" Content="6" Click="Button_Click"/>
+        <Button x:Name="Button3" Grid.Column="3" Grid.Row="3" Content="3" Click="Button_Click"/>
+        <Button x:Name="ButtonEqual" Grid.Column="3" Grid.Row="4" Content="=" Click="ButtonEqual_Click" />
+        <Button x:Name="ButtonDivide" Grid.Column="4" Grid.Row="1" Content="/" Click="ButtonDivide_Click" />
+        <Button x:Name="ButtobMultiply" Grid.Column="4" Grid.Row="2" Content="*" Click="ButtonMultiply_Click"/>
+        <Button x:Name="ButtonMinus" Grid.Column="4" Grid.Row="3" Content="-" Click="ButtonMinus_Click" />
+        <Button x:Name="ButtonAdd" Grid.Column="4" Grid.Row="4" Content="+" Click="ButtonAdd_Click" />
+    </Grid>
+</mah:MetroWindow>
